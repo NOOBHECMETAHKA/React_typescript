@@ -30,7 +30,7 @@ export default function CollectionCards() {
       <h1 className="mt-1 mb-3 text-secondary text-center">Список товаров</h1>
       <div className="container d-flex flex-row flex-wrap justify-content-between gap-3">
         {
-          cards.map((data) => {
+          cards.map((data: MebelObjectResponce) => {
             return <Card key={data.id} title={data.name} price={data.price} picture={errorPNG}></Card>;
           })
         }
